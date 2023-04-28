@@ -1,0 +1,41 @@
+.process-block {
+  &__step {
+    width: rem(70px);
+    height: rem(70px);
+    border-radius: 100%;
+    text-align: center;
+    line-height: rem(70px);
+    border: 1px solid red;
+    font-size: rem(24px);
+    font-weight: 600;
+    margin: 0 auto rem(20px);
+    position: relative;
+    transition: all 0.25s ease;
+    &::after {
+      @include media-breakpoint-up(lg) {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: $primary;
+        width: rem(100px);
+        position: absolute;
+        top: 50%;
+        left: rem(130px);
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &:last-child {
+    .process-block__step {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &:hover {
+    .process-block__step {
+      background-color: $secondary;
+      color: #fff;
+    }
+  }
+}

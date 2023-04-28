@@ -1,0 +1,32 @@
+.menu-sidebar {
+  .nav {
+    &-pills {
+      .nav-link {
+        text-align: left;
+        color: $secondary;
+        font-weight: 400;
+        margin-bottom: rem(10px);
+        display: block;
+        width: 100%;
+        &.active {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.menu-card {
+  flex-direction: column;
+  @include media-breakpoint-up(lg) {
+    height: rem(200px);
+    flex-direction: row;
+  }
+  img {
+    height: 150px;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+  }
+}

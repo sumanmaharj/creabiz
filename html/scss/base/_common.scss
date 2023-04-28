@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%; //~10/16px, where 16px is a default font size of the browser
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: rem(86px);
+  @include media-breakpoint-down(xxl) {
+    font-size: rem(14px);
+  }
+}
+img {
+  height: auto;
+  max-width: 100%;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+sup {
+  font-size: 55%;
+}
+
+[href^="tel:"],
+[href^="mailto:"] {
+  color: $primary;
+}
+a {
+  text-decoration: none;
+}
+
+h5 {
+  @include media-breakpoint-down(lg) {
+    font-size: rem(16px);
+  }
+}

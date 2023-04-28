@@ -1,0 +1,64 @@
+$bootstrap-icons-font: "bootstrap-icons";
+
+// scss-docs-start gray-color-variables
+$white: #fff;
+$gray-100: #f4faff;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start theme-color-variables
+$theme-color-1: #2f2e5c;
+$theme-color-2: #d84544;
+$theme-color-3: #ffce00;
+$theme-color-4: $gray-100;
+
+$primary: $theme-color-1;
+$secondary: $theme-color-2;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start font-variables
+
+$font-family-base: "Montserrat", sans-serif;
+
+// $font-weight-light: 300;
+// $font-weight-base: $font-weight-light;
+
+$headings-color: $primary;
+$headings-font-weight: 700;
+
+// Settings for the `<body>` element.
+
+$body-text-align: null;
+$body-color: $gray-900;
+$body-bg: $theme-color-4;
+
+// $font-size-base affects the font size of the body text
+$font-size-base: 1.6rem; // Assumes the browser default, typically `16px`
+
+$transition-default: all 0.25s ease-in-out;
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 6.5,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+);

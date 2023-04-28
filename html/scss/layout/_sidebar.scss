@@ -1,0 +1,50 @@
+.sidebar {
+  &-categories {
+    margin-top: rem(40px);
+    &__list {
+      ul {
+        li {
+          margin: 0 0 rem(20px) 0;
+          padding-left: 0;
+          .nav-link {
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: rem(16px);
+            padding: 0;
+            position: relative;
+            display: inline-block;
+            transition: all 0.25s ease;
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 0;
+              height: 1px;
+              background-color: $primary;
+              transition: all 0.25s ease;
+            }
+            &:hover {
+              font-weight: 600;
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+          &.active {
+            .nav-link {
+              font-weight: 700;
+              background-color: transparent !important;
+              color: $primary !important;
+            }
+          }
+
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  &-title {
+    margin-bottom: rem(40px);
+  }
+}

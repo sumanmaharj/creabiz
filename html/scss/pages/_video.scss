@@ -1,0 +1,35 @@
+.video-category-dropdown {
+  max-width: 80%;
+  .dropdown-toggle {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    i {
+      color: $secondary;
+      margin-left: 50px;
+    }
+    &:active,
+    .show {
+      border: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+  .dropdown-menu {
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    .dropdown-item {
+      font-style: rem(14px);
+      &:hover {
+        background-color: $gray-300;
+      }
+    }
+  }
+}

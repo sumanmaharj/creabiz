@@ -1,0 +1,4 @@
+@use "sass:math";
+@function rem($size) {
+    @return $size / 10px * 1rem;
+  }

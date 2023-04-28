@@ -1,0 +1,21 @@
+@import "base/functions";
+@import "base/variables";
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/owlcarousel/owl.theme.default";
+@import "vendor/owlcarousel/owl.carousel";
+@import "vendor/owlcarousel/owl.carousel";
+@import "vendor/fontawesome/scss/fontawesome";
+@import "vendor/fontawesome/scss/brands";
+@import "vendor/fontawesome/scss/solid";
+@import "vendor/fontawesome/scss/regular";
+
+@import "base/common";
+@import "base/mixins";
+@import "base/utilities";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
+@import "components/compontents";
+@import "pages/video";

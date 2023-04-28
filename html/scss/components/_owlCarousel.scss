@@ -1,0 +1,46 @@
+.owl-carousel {
+  .item {
+    padding-right: rem(2px);
+  }
+  .owl-nav {
+    [class*="owl-"] {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      img {
+        width: rem(20px);
+      }
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    .owl-prev {
+      left: rem(-50px);
+    }
+    .owl-next {
+      right: rem(-50px);
+    }
+  }
+  .owl-dots {
+    margin-top: rem(30px);
+    .owl-dot {
+      span {
+        background-color: $gray-300;
+      }
+      &.active {
+        span {
+          background-color: $secondary;
+        }
+      }
+    }
+  }
+}
+.bg-primary {
+  .owl-carousel {
+    .owl-dot {
+      span {
+        background-color: $theme-color-4;
+      }
+    }
+  }
+}

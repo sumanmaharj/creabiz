@@ -1,0 +1,54 @@
+.freedemoModal {
+  .modal-content {
+    background-color: $theme-color-3;
+    border: none;
+    .modal-body {
+      padding: 0;
+      .owl-carousel {
+        height: 100%;
+        .owl-stage,
+        .owl-stage-outer,
+        .owl-item,
+        .item {
+          height: 100%;
+        }
+        .card {
+          border-radius: 0;
+          border: none;
+          height: 100%;
+          &-image {
+            border: none;
+            border-radius: 0;
+            height: 100%;
+          }
+          &-body {
+            padding-bottom: 90px;
+          }
+        }
+      }
+      .link {
+        color: $secondary;
+        text-decoration: underline;
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+  }
+  .owl-nav {
+    [class*="owl-"] {
+      bottom: 40px;
+      transform: none;
+      top: inherit;
+    }
+    .owl-prev {
+      left: 70px;
+    }
+    .owl-next {
+      right: 70px;
+    }
+  }
+}

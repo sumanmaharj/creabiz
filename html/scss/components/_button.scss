@@ -1,0 +1,43 @@
+.btn {
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  border-radius: rem(10px);
+  font-weight: normal;
+  &-outline {
+    &-secondary {
+      background-color: #fff;
+      color: $primary;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &-icon {
+    width: rem(35px);
+    height: rem(35px);
+    border-radius: 100%;
+    background-color: rgba(#fff, 0.5);
+    color: $secondary;
+    text-align: center;
+    padding: 0;
+    line-height: rem(35px);
+    z-index: 2;
+
+    &.large {
+      width: rem(60px);
+      height: rem(60px);
+      line-height: rem(60px);
+      font-size: rem(24px);
+    }
+    &:hover {
+      background-color: rgba(#fff, 1);
+    }
+  }
+}
+.play-button {
+  border: 1px solid rgba(255, 255, 255, 1);
+  padding: rem(20px);
+  border-radius: 100%;
+  display: inline-block;
+}

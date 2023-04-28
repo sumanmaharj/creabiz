@@ -1,0 +1,26 @@
+.client {
+  padding: rem(25px) 0;
+  &-item {
+    img {
+      width: rem(120px) !important;
+      filter: grayscale(1);
+      opacity: 0.2;
+      transition: $transition-default;
+    }
+    &:hover {
+      img {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.column-lg-5 {
+  .col-lg-2 {
+    @include media-breakpoint-between(lg, xxl) {
+      flex: 0 0 auto;
+      width: 20%;
+    }
+  }
+}

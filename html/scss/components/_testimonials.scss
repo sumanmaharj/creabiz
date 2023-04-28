@@ -1,0 +1,26 @@
+.testimonial-item {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: rem(50px) rem(15px);
+  position: relative;
+  margin: rem(15px) rem(25px) rem(35px) rem(25px);
+  @include media-breakpoint-up(lg) {
+    margin: rem(15px) rem(50px) rem(35px) rem(50px);
+    padding: rem(50px);
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    width: rem(60px);
+    background-color: $primary;
+    top: rem(-15px);
+    left: rem(-24px);
+    padding: 0 rem(15px) rem(15px) 0;
+
+    img {
+    }
+  }
+  .testimonial-text {
+    margin-bottom: rem(30px);
+  }
+}

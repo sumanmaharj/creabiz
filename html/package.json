@@ -1,0 +1,18 @@
+{
+  "name": "creabiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass  --source-map true -o assets/css scss",
+    "watch:scss": "node-sass --source-map true  -o assets/css scss -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "^5.3.0-alpha1",
+    "bootstrap-icons": "^1.10.3",
+    "node-sass": "^8.0.0"
+  }
+}

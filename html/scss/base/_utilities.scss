@@ -1,0 +1,25 @@
+.heading {
+  font-family: $font-family-base;
+}
+.color {
+  color: $theme-color-3 !important;
+}
+.text-justify {
+  text-align: justify;
+}
+.row {
+  &.col-mb-40 {
+    margin-bottom: rem(-40px);
+    [class*="col-"] {
+      margin-bottom: rem(40px);
+    }
+  }
+}
+
+.cms-content {
+  p {
+    font-size: rem(18px);
+    text-align: justify;
+    line-height: 1.7;
+  }
+}
