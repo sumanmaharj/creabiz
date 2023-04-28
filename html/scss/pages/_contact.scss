@@ -1,0 +1,29 @@
+.contact-detail{
+    ul{
+        li{
+            margin-bottom: rem(15px);
+            a{
+                position: relative;
+                padding-bottom: rem(3px);
+                &::after{
+                    content: "";
+                    display: block;
+                    background-color: $secondary;
+                    position: absolute;
+                    bottom: 0;
+                    left:0;
+                    height: rem(1px);
+                    width: 0;
+                    transition: $transition-default;
+
+                }
+                &:hover{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

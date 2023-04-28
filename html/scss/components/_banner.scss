@@ -13,6 +13,9 @@
     flex-direction: row;
   }
   @include media-breakpoint-up(xl) {
+    height: calc(100vh - 86px);
+  }
+  @include media-breakpoint-up(xxl) {
     //height: calc(100vh - 86px);
     height: rem(750px);
   }

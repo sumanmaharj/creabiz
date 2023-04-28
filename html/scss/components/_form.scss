@@ -1,6 +1,13 @@
-input {
-  &.form-control {
+
+.form-control {
     height: rem(47px);
     border-radius: rem(10px);
+
+}
+textarea{
+  &.form-control{
+    height: rem(108px);
   }
 }
+
+

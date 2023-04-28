@@ -19622,6 +19622,9 @@ ul.list.has-icon li {
       flex-direction: row; } }
   @media (min-width: 1200px) {
     .banner {
+      height: calc(100vh - 86px); } }
+  @media (min-width: 1400px) {
+    .banner {
       height: 75rem; } }
   @media (max-width: 991.98px) {
     .banner-content {
@@ -19672,9 +19675,12 @@ ul.list.has-icon li {
 .inner-banner {
   height: 54rem; }
 
-input.form-control {
+.form-control {
   height: 4.7rem;
   border-radius: 1rem; }
+
+textarea.form-control {
+  height: 10.8rem; }
 
 .testimonial-item {
   border: 1px solid #fff;
@@ -19954,5 +19960,23 @@ input.form-control {
       font-style: 1.4rem; }
       .video-category-dropdown .dropdown-menu .dropdown-item:hover {
         background-color: #dee2e6; }
+
+.contact-detail ul li {
+  margin-bottom: 1.5rem; }
+  .contact-detail ul li a {
+    position: relative;
+    padding-bottom: 0.3rem; }
+    .contact-detail ul li a::after {
+      content: "";
+      display: block;
+      background-color: #d84544;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0.1rem;
+      width: 0;
+      transition: all 0.25s ease-in-out; }
+    .contact-detail ul li a:hover::after {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
