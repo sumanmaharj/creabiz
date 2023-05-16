@@ -19742,7 +19742,8 @@ textarea.form-control {
       left: 0;
       bottom: 0;
       width: 100%;
-      background: linear-gradient(0deg, #d84544 0%, rgba(255, 255, 255, 0) 51%); }
+      background: #495057;
+      background: linear-gradient(0deg, #495057 0%, rgba(255, 255, 255, 0) 61%); }
     .card-image img {
       height: 100%;
       object-fit: cover;
@@ -19906,7 +19907,8 @@ textarea.form-control {
       .freedemoModal .modal-content .modal-body .owl-carousel .card {
         border-radius: 0;
         border: none;
-        height: 100%; }
+        height: 100%;
+        margin-left: -1px; }
         .freedemoModal .modal-content .modal-body .owl-carousel .card-image {
           border: none;
           border-radius: 0;
@@ -19978,5 +19980,9 @@ textarea.form-control {
       transition: all 0.25s ease-in-out; }
     .contact-detail ul li a:hover::after {
       width: 100%; }
+
+.portfolio-banner .owl-carousel .owl-item img {
+  width: 20rem;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

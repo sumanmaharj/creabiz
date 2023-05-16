@@ -99,7 +99,17 @@ function Portfolio() {
   });
 }
 function InIt() {
-  new WOW().init();
+  //new WOW().init();
+  // $("a[data-rel^=lightcase]").lightcase();
+  $("a[data-rel^=lightcase]").lightcase();
+
+  $(".scrollBtn").click(function() {
+    //animate html body and use jQuery scrollTop
+        $('html, body').animate({
+            scrollTop: $("#vide-examples").offset().top - 100
+        },500);
+    });
+
 }
 function stickyHeader() {
   var scroll = $(window).scrollTop();
@@ -125,11 +135,20 @@ function modalCarousel() {
   $(".freedemoModal .owl-carousel").owlCarousel({
     loop: true,
     items: 1,
+    margin:0,
     nav: true,
     navText: [
       "<img src='assets/images/icon/arrow-left--light.svg'>",
       "<img src='assets/images/icon/arrow-right--light.svg'>",
     ],
+  });
+}
+function portfolioBanner(){
+  $("#portfolio-banner").owlCarousel({
+    items:1,
+    loop: true,
+    nav: false,
+    dots: true,
   });
 }
 $(document).ready(function () {
@@ -141,8 +160,18 @@ $(document).ready(function () {
   InIt();
   footerSlide();
   modalCarousel();
+  portfolioBanner();
+
+  $("#test").owlCarousel({
+    loop: false,
+    items: 1,
+    nav: false,
+    dots: true,
+  });
+
 });
 
 $(window).scroll(function () {
   stickyHeader();
+
 });
